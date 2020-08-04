@@ -1,0 +1,285 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: "roboto", sans-serif;
+    font-size: 14px;
+    font-weight: 500;
+    text-align: left;
+    line-height: 24px;
+    color: #ffffff;
+    margin: 0;
+    background-color: #100e17;
+}
+
+h1 {
+    font-size: 36px;
+    margin: 10px 0;
+}
+
+h2 {
+    font-size: 2rem;
+    font-weight: bold;
+    line-height: 1.2;
+    margin: 20px 0;
+}
+
+h3 {
+    font-weight: bold;
+    font-size: 25px;
+}
+
+h4 {
+    font-size: 20px;
+    margin-bottom: 30px;
+}
+
+section {
+    background-color: #100e17;
+    width: 100%;
+    height: 100vh;
+    margin: -15px 0;
+}
+
+.container {
+    max-width: 1110px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin: 0 auto;
+    padding: 0 15px;
+    transform: translateY(50%)
+}
+
+.mainInfo {
+    padding: 0 15px;
+}
+
+.myPhoto {
+    border-radius: 50%;
+    margin: 0 auto;
+    height: 360px;
+    width: 360px;
+    text-align: center;
+    float: none;
+    vertical-align: middle;
+    max-width: 100%;
+    border: 20px solid rgba(0, 0, 0, 0.3);
+}
+
+.imgBorder {
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+    border-radius: 50%;
+    border: 20px solid rgba(0, 0, 0, 0.9);
+}
+
+.addressData {
+    list-style-type: none;
+    padding: 0;
+    margin: 20px 0 0 0;
+}
+
+.home .container .mainInfo ul li {
+    margin: 10px 0;
+}
+
+.home .container .mainInfo ul li a {
+    text-decoration: none;
+    padding: 0;
+    color: white;
+}
+
+.addressData i {
+    transition: .2s;
+    padding-right: 10px;
+}
+
+.home .container .mainInfo ul li:hover {
+    color: #188c91;
+}
+
+.home .container .mainInfo .hello {
+    margin-bottom: 30px;
+}
+
+.home .container .mainInfo .hello span {
+    background-color: #188c91;
+    padding: 10px 30px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.home .container .mainInfo .socialIcon {
+    display: inline-block;
+    margin: 0;
+    padding: 0;
+}
+
+.home .container .mainInfo .socialIcon li {
+    list-style: none;
+    float: left;
+    margin: 10px 0;
+}
+
+.home .container .mainInfo .socialIcon li a {
+    display: block;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    margin-right: 10px;
+    line-height: 27px;
+    transition: .5s;
+}
+
+.home .container .mainInfo .socialIcon li a:hover {
+    background-color: #ffffff;
+    color: #188c91;
+    border-radius: 3px;
+}
+
+
+/* ======================== SEKCKJA 2 ======================= */
+
+.imgFluid {
+    max-width: 100%;
+    height: auto;
+}
+
+.columnImg {
+    max-width: 50%;
+    padding-right: 15px;
+}
+
+.columnAboutMe {
+    max-width: 50%;
+    padding-left: 15px;
+}
+
+.aboutMe .container.AbMe .columnAboutMe ul {
+    list-style-type: none;
+    margin: 0 50px 0 0;
+    padding: 0 50px 0 0;
+}
+
+.aboutMe .container.AbMe .columnAboutMe ul li {
+    margin: 0 6px;
+    border-radius: 4px;
+    margin: 0 6px 10px;
+    padding: 4px 0;
+    display: inline-block;
+}
+
+.aboutMe .container.AbMe .columnAboutMe ul li span {
+    border: 1px solid #188c91;
+    padding: 4px 10px;
+    border-radius: 4px;
+}
+
+.aboutMe .container.AbMe .columnAboutMe .btn {
+    color: #ffffff;
+    text-decoration: none;
+    background-color: #188c91;
+    font-weight: bold;
+    border-radius: 20px;
+    padding: 8px 30px;
+    line-height: 1.5;
+    text-align: center;
+    font-size: 16px;
+    border: 1px solid transparent;
+    margin: 20px 0 0 0;
+    display: inline-block;
+}
+
+.aboutMe .container.AbMe .columnAboutMe .btn i {
+    padding-left: 10px;
+}
+
+
+/* ====================== SERVICE ==================== */
+
+.sectionSeparator {
+    padding: 100px 0 60px 0;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+.columnTextCenter {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding: 0 15px;
+    text-align: center;
+}
+
+.columnTextCenter h3 {
+    margin: 0 0 60px 0;
+    font-size: 2rem;
+    line-height: 34px;
+}
+
+.columnSm {
+    position: relative;
+    width: 100%;
+    min-height: 1px;
+    padding: 0 15px;
+    flex: 0 0 33.333333%;
+    min-width: 33.3333333%;
+}
+
+.columnDark {
+    background-color: #202026;
+    padding: 20px;
+    border-radius: 4px;
+    box-shadow: -1rem 0 3rem #000000;
+}
+
+.sectionSeparator .columnSm .columnDark .fas,
+.far {
+    font-size: 30px;
+}
+
+.sectionSeparator .columnSm .columnDark .fas.fa-bullseye {
+    color: #9774fa;
+}
+
+.sectionSeparator .columnSm .columnDark .fas.fa-code {
+    color: #ed7256;
+}
+
+.sectionSeparator .columnSm .columnDark .far.fa-object-ungroup {
+    color: #2796e2;
+}
+
+
+/*  =============== MEDIA QUIER ==================  */
+
+@media (max-width: 1000px) {
+    .container {
+        width: 900px;
+    }
+}
+
+@media (max-width: 700px) {
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .myPhoto {
+        margin-bottom: 100px;
+    }
+    .mainInfo {
+        text-align: center;
+    }
+}

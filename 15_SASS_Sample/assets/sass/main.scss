@@ -1,0 +1,46 @@
+@import "variables";
+@import "mixins";
+body {
+    background-color: $bodyColor;
+}
+
+.container {
+    max-width: 1170px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 $gutterGap;
+}
+
+// .about .container ul {
+//     margin: 0;
+//     padding: 0;
+//     list-style: none;
+// }
+// .about .container ul li a {
+//     text-decoration: none;
+// }
+.about {
+    .container {
+        ul {
+            @include reset-list;
+            li {
+                a {
+                    text-decoration: none;
+                    &:hover {
+                        color: pink;
+                    }
+                }
+            }
+        }
+        .photo {
+            background-color: blue;
+            img {
+                display: block;
+            }
+        }
+        // include fluid type --- minwidth, maxwidth, minfonsize,maxfonsize
+        h1 {
+            @include fluid-type-static(20px, 70px);
+        }
+    }
+}
